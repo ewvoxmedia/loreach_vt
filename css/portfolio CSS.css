@@ -1,0 +1,279 @@
+/* PRINCIPAL */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400 auto;
+}
+
+.button
+{
+  background-color: #ffd685;
+  font-size: large;
+  width: 300px;
+  height: 100px;
+  border-radius: 2em;
+  border-color: rgb(179, 0, 255);
+}
+
+.button:hover
+{
+  background-color: #ffd685;
+  border-radius: 4em;
+  font-weight: bold;
+  border: none;
+  border-radius: none;
+  border-style: solid;
+  border-color: rgb(179, 0, 255);
+}
+
+.button2
+{
+  background-color: #ff85dab1;
+  font-size: large;
+  width: 100px;
+  height: 70px;
+  border-radius: 1em;
+  border-color: rgb(179, 0, 255);
+}
+
+.button2:hover
+{
+  background-color: #ff85e19c;
+  border-radius: 2em;
+  border: none;
+  font-weight: bold;
+  border-radius: none;
+  border-style: solid;
+  border-color: rgb(179, 0, 255);
+}
+
+.bodhe, p
+{
+  text-align: center;
+  font: xx-large;
+}
+.he {
+  color: purple;
+  margin-right: 1em;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 2%;
+  animation-name: txt;
+  animation-duration: 6s;
+}
+
+.logo {
+  width: 50%;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  animation-iteration-count: unset;   
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 50%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+}
+
+.nav1 {
+  background-color: rgb(255, 220, 144);
+  border-color: rgb(102, 53, 102);
+  border-style: solid;
+  border-radius: 22px;
+  border-width: 2px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  padding-right: 4em;
+  font-size: 20px;
+  background: rgb(255, 220, 144);
+}
+
+.nav1 {
+  animation-duration: 1s;
+  animation-name: nav1in;
+  animation-iteration-count: unset;
+}
+@keyframes nav1in {
+  from {
+    margin-left: 30%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+a:hover {
+color: rgb(255, 255, 255);
+}
+
+header {
+  border-radius: 22px;
+  border-style: solid;
+  border-color: rgb(102, 53, 102);
+  background: linear-gradient(rgb(255, 188, 255), rgb(180, 107, 180));;
+}
+
+
+/* FOOTER + ANIMACIONES */
+
+.foot {
+  height: 16vh;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  background-color: rgb(180, 107, 180);
+}
+
+
+td {
+  border-style: solid;
+  border-color: rebeccapurple;
+  letter-spacing: 2px;
+}
+
+
+.main {
+  background: rgb(196, 167, 238);
+  padding: 2em;
+  border-radius: 25px;
+  border-style: none;
+}
+
+td {
+  border-style: solid;
+  border-color: rebeccapurple;
+  letter-spacing: 2px;
+}
+
+body
+{    
+    width: 100%;
+    background: rgba(233, 153, 255, 0.584);
+}
+
+h2, h4, a, small
+{
+    margin: 0;
+    padding: 0;
+}
+.carousel
+{
+    width: 50%;
+    height: 60%;
+    margin: 50px auto;
+    text-align: center;
+    background: linear-gradient(rgb(255, 234, 188), rgb(180, 107, 180));;
+    border-style: solid;
+    border-color: rebeccapurple;
+    border-radius: 2em;
+}
+.carousel h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: rgb(175, 74, 184);
+}
+
+.carrusel-list
+{
+    position: relative;
+    width: 200px;
+    height: 200%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#track
+/* Explicación de como poner las imagenes una al lado de otra: https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox*/
+{
+    display: flex;
+    position: relative;
+    top: 0px;
+    transition: 0.5s ease-in-out;
+    /* left: 8px; */
+}
+.carrusel
+{
+    position: relative;
+    width: 300em;
+}
+
+.carrusel div a
+{
+    text-decoration: none;       
+}
+
+.carrusel div a h4
+{
+    position: absolute;
+    padding: 5px;
+
+    font-size: 25px;
+
+    color: white;
+}
+
+.carrusel div a h4 small
+{
+    display: block;
+    /* font-size: 15px; */
+}
+
+.carrusel div a picture img
+{
+    width: 200px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+/* CONFIGURACIÓN BOTÓN Y FLECHAS. */
+.carrusel-arrow
+{
+    position: absolute;
+    top: 135px;
+    padding: 1em;
+    border-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    z-index: 4;
+    /* border-color: blue; */
+    /* border: 0; */
+    
+}
+
+.carrusel-prev
+{
+  left: 0px;
+}
+
+.carrusel-next
+{
+    right: 0px;
+}
+
+.carrusel-arrow svg
+{
+    width: 15px;
+    height: 100%;
+
+    color: rgba(208, 53, 255, 0.977)
+}
+
+.bu
+{
+  border-style: none;
+  width: 40px auto;
+  height: 40px auto;
+  border-radius: 50%;
+  background-color: #ffd685;
+}
